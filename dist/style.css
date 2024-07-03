@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn{
+    @apply font-bold ring-2 ring-blue-700 w-40 mt-5 py-2 rounded-full hover:text-white hover:bg-blue-500 transition-all duration-500;
+}

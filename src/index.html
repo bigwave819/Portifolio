@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="output.css">
+    <link rel="icon" type="image/x-icon" href="assets/images/logo.jpg" class="rounded">
+    <title>Hirwa Tresor</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+      *{
+        font-family: 'Poppins', sans-serif;
+      }
+      .dark{
+        background-color: #101319;
+      }
+        ::-webkit-scrollbar{
+          width: 10px;
+        }
+        ::-webkit-scrollbar-track{
+          background: #d1e5ff;
+        }
+        ::-webkit-scrollbar-thumb{
+          background: #ffd903;
+          border-radius: 15px;
+        }.dark #icon{
+        display: block;
+      }
+      #icon{
+        display: none;
+      }
+      #navlinks{
+        animation: transition .4s;
+      }
+      @keyframes translate {
+        0%{
+            transform: translatey(-100%);
+        }
+        100%{
+            transform: translatey(0%);
+        }
+      }
+      </style>
+</head>
+<body class="dark:bg-gray-900 min-h-screen">
+  <header class="absolute w-full bg-white dark:bg-gray-950 dark:text-white shadow-md mb-32">
+    <div class="container m-auto h-16 py-3 lg:h-20 lg:py-4">
+        <div class="flex flex-wrap items-center justify-between">
+            <div class="relative z-10 w-full flex items-center justify-between px-6 lg:w-auto">
+                <a href="#" class="inline-flex">
+                    <img src="assets/images/logo.jpg" alt="logo" class="w-9 h-9 mr-5">
+                    <h1 class="text-2xl">Hirwa Tresor</h1>
+                </a>
+                <button id="hamburger" class="relative w-10 h-10 lg:hidden">
+                    <div role="hidden" id="line" class="inset-0 w-6 h-0.5 m-auto rounded bg-gray-500 transition duration-500"></div>
+                    <div role="hidden" id="line2" class="inset-0 w-6 h-0.5 mt-2 m-auto rounded bg-gray-500 transition duration-500"></div>
+                </button>
+            </div>
+            <div id="navlinks" class="hidden lg:block w-full bg-white dark:bg-slate-950 lg:bg-transparent lg:w-auto px-6">
+                <ul class="pt-6 pb-8 text-gray-600 lg:flex lg:items-center lg:space-x-8 lg:mr-36 lg:pt-0 lg:pb-0">
+                    <li>
+                        <a href="#home" class="block text-center font-bold py-3 text-xl hover:text-blue-500 transition">
+                            <span>Home</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#Section-Skills" class="block py-3 text-center font-bold text-xl hover:text-blue-500 transition">
+                            <span>Skills</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#Projects" class="block py-3 text-center font-bold text-xl hover:text-blue-500 transition">
+                            <span>Project</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#education" class="block py-3 text-center font-bold text-xl hover:text-blue-500 transition">
+                            <span>Education</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="block py-3 text-center font-bold text-xl hover:text-blue-500 transition">
+                            <span>Contact</span>
+                        </a>
+                    </li>
+                    <li class="text-center">
+                        <div>
+                            <span>
+                                <i class="fas fa-moon hover:text-blue-300 duration-500 block dark:hidden text-3xl cursor-pointer" id="darkModeToggle"></i>
+                                <i class="fas fa-sun cursor-pointer text-2xl text-yellow-400" id="icon"></i>
+                            </span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+    <section id="home" class="pt-10">
+        <div class="container min-h-screen">
+        <!--============== started the home page ==================-->
+            <div class="flex flex-wrap lg:items-center p-12">
+              <div class="lg:w-1/2 lg:mt-70">
+              <h2 class="lg:ml-3 text-3xl mb-5 dark:text-gray-400 font-bold" style="font-family: 'Unbounded', cursive;">My Net profile</h2>
+              <p class="lg:ml-3 mb-5 font-light dark:text-gray-300">
+              As a proficient software developer with experience
+              in modern technologies and a keen interest in 
+              front-end frameworks like Vue.js, I specialize
+              in creating efficient, scalable, and user-friendly
+              web applications. With a solid foundation in software 
+              development principles and a passion for continuous learning,
+              I am adept at leveraging my skills to deliver high-quality
+              software solutions. I am also familiar with Linux environments,
+              particularly Ubuntu, which enhances my capability to
+               work effectively in diverse development settings.</p>
+              </div>
+              <div class="lg:w-1/2 lg:mt-70 md:mt-56 lg:mt-0">
+              <img src="assets/images/logo.jpg" class="lg:mt-20 shadow-2xl mt-5 md:ml-7">
+            </div>
+            </div>
+    </section>
+    <!--start of the skills section-->
+      <div class="min-h-screen pb-5 max-xl:pb-7 dark:bg-beige-2" id = "Section-Skills">
+        <div style="font-family: 'Unbounded', cursive;" class="flex justify-center">
+          <h1 class="text-3xl lg:text-4xl font-semibold max-lg:mt-10 mt-24 dark:text-white">
+            <u>Skills</u></h1>
+        </div>
+        <div class="flex justify-center p-2 pb-6">
+          <div style="font-family: 'Montserrat Alternates', sans-serif;" class="lg:px-16 px-10 py-8 rounded-lg mt-8 bg-zinc-200 dark:bg-beige-1 grid grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-x-8 gap-y-6">
+              <div class="bg-zinc-500 dark:bg-shuttle-gray opacity-75 text-white rounded-lg h-40 w-36 md:w-60 py-4 hover:drop-shadow-2xl hover:opacity-100 transition duration-200">
+                <span class="flex shrink justify-center">
+                    <img src="./Assets/skills_images/c++.svg" alt="C++" class="h-24">
+                </span>
+                <p class="text-center text-xl mt-2">C++</p>
+                </div>
+              <div class="bg-zinc-500 dark:bg-shuttle-gray opacity-75 text-white rounded-lg h-40 w-36 md:w-60 py-4 hover:drop-shadow-xl hover:opacity-100 transition duration-200 col-start-2">
+              <span class="flex justify-center">
+              <img src="./Assets/skills_images/java.svg" alt="Java" class="h-24">
+              </span>
+              <p class="text-center text-xl mt-2">Java</p>
+              </div>
+              <div class="bg-zinc-500 dark:bg-shuttle-gray opacity-75 text-white rounded-lg h-40 w-36 md:w-60 py-4 hover:drop-shadow-xl hover:opacity-100 transition duration-200 lg:col-start-3">
+                <span class="flex justify-center">
+                <img src="./Assets/skills_images/python.svg" alt="Python" class="h-24">
+                </span>
+                <p class="text-center text-xl mt-2">Python</p>
+                </div>
+              <div class="bg-zinc-500 dark:bg-shuttle-gray opacity-75 text-white rounded-lg h-40 w-36 md:w-60 py-4 hover:drop-shadow-xl hover:opacity-100 transition duration-200 max-lg:col-start-2 2xl:col-start-4">
+              <span class="flex justify-center">
+              <img src="./Assets/skills_images/bash.svg" alt="Bash" class="h-24">
+              </span><p class="text-center text-xl mt-2">Bash</p>
+              </div>
+              <div class="bg-zinc-500 dark:bg-shuttle-gray opacity-75 text-white rounded-lg h-40 w-36 md:w-60 py-4 hover:drop-shadow-xl hover:opacity-100 transition duration-200 lg:max-2xl:col-start-2">
+                <span class="flex justify-center">
+                    <img src="./Assets/skills_images/html.svg" alt="HTML" class="h-24">
+                </span><p class="text-center text-xl mt-2">HTML</p>
+            </div>
+              <div class="bg-zinc-500 dark:bg-shuttle-gray opacity-75 text-white rounded-lg h-40 w-36 md:w-60 py-4 hover:drop-shadow-xl hover:opacity-100 transition duration-200 col-start-2 lg:max-2xl:col-start-3 2xl:col-start-2">
+              <span class="flex justify-center">
+              <img src="./Assets/skills_images/css.svg" alt="CSS3" class="h-24">
+              </span>
+              <p class="text-center text-xl mt-2">CSS3</p>
+              </div>
+              <div class="bg-zinc-500 dark:bg-shuttle-gray opacity-75 text-white rounded-lg h-40 w-36 md:w-60 py-4 hover:drop-shadow-xl hover:opacity-100 transition duration-200 2xl:col-start-3">
+                <span class="flex justify-center">
+                    <img src="./Assets/skills_images/tailwindcss.svg" alt="Tailwind CSS" class="h-24">
+                </span><p class="text-center text-xl mt-2">Tailwind CSS</p>
+            </div>
+              <div class="bg-zinc-500 dark:bg-shuttle-gray opacity-75 text-white rounded-lg h-40 w-36 md:w-60 py-4 hover:drop-shadow-xl hover:opacity-100 transition duration-200 col-start-2 lg:max-2xl:col-start-2 2xl:col-start-4">
+              <span class="flex justify-center">
+              <img src="./Assets/skills_images/api.svg" alt="API" class="h-20 mt-3">
+              </span>
+              <p class="text-center text-xl mt-3">API</p>
+            </div>
+                <div class="bg-zinc-500 dark:bg-shuttle-gray opacity-75 text-white rounded-lg h-40 w-36 md:w-60 py-4 hover:drop-shadow-xl hover:opacity-100 transition duration-200 2xl:col-start-1">
+                <span class="flex justify-center">
+                    <img src="assets/skills_images/nodejs.svg" alt="node" class="h-24">
+                </span>
+                <p class="text-center text-xl mt-2">Node</p>
+              </div>
+              <div class="bg-zinc-500 dark:bg-shuttle-gray opacity-75 text-white rounded-lg h-40 w-36 md:w-60 py-4 hover:drop-shadow-xl hover:opacity-100 transition duration-200 2xl:col-start-2">
+                <span class="flex justify-center">
+                    <img src="assets/skills_images/vue.svg" alt="vue" class="h-24">
+                </span>
+                <p class="text-center text-xl mt-2">Vue</p>
+              </div>
+                <div class="bg-zinc-500 dark:bg-shuttle-gray opacity-75 text-white rounded-lg h-40 w-36 md:w-60 py-4 hover:drop-shadow-xl hover:opacity-100 transition duration-200 2xl:col-start-3">
+                    <span class="flex justify-center">
+                        <img src="assets/skills_images/bootstrap.svg" alt="bootstrap" class="h-24">
+                    </span>
+                    <p class="text-center text-xl mt-2">Bootstrap</p>
+                  </div>
+                  <div class="bg-zinc-500 dark:bg-shuttle-gray opacity-75 text-white rounded-lg h-40 w-36 md:w-60 py-4 hover:drop-shadow-xl hover:opacity-100 transition duration-200 2xl:col-start-4">
+                    <span class="flex justify-center">
+                        <img src="assets/skills_images/laravel-2.svg" alt="laravel" class="h-24">
+                    </span>
+                    <p class="text-center text-xl mt-2">Laravel</p>
+                  </div>
+                  <div class="bg-zinc-500 dark:bg-shuttle-gray opacity-75 text-white rounded-lg h-40 w-36 md:w-60 py-4 hover:drop-shadow-xl hover:opacity-100 transition duration-200 2xl:col-start-1">
+                    <span class="flex justify-center">
+                        <img src="assets/skills_images/mysql.svg" alt="mysql" class="h-24">
+                    </span>
+                    <p class="text-center text-xl mt-2">Mysql</p>
+                  </div>
+                  <div class="bg-zinc-500 dark:bg-shuttle-gray opacity-75 text-white rounded-lg h-40 w-36 md:w-60 py-4 hover:drop-shadow-xl hover:opacity-100 transition duration-200 2xl:col-start-2">
+                    <span class="flex justify-center">
+                        <img src="assets/skills_images/php.svg" alt="php" class="h-24">
+                    </span>
+                    <p class="text-center text-xl mt-2">Php</p>
+                  </div>
+                    <div class="bg-zinc-500 dark:bg-shuttle-gray opacity-75 text-white rounded-lg h-40 w-36 md:w-60 py-4 hover:drop-shadow-xl hover:opacity-100 transition duration-200 2xl:col-start-3">
+                        <span class="flex justify-center">
+                            <img src="assets/skills_images/logo-javascript.svg" alt="javascript" class="h-24">
+                        </span>
+                        <p class="text-center text-xl mt-2">JavaScript</p>
+                      </div>
+                      <div class="bg-zinc-500 dark:bg-shuttle-gray opacity-75 text-white rounded-lg h-40 w-36 md:w-60 py-4 hover:drop-shadow-xl hover:opacity-100 transition duration-200 2xl:col-start-4">
+                        <span class="flex justify-center">
+                            <img src="assets/skills_images/latex.svg" alt="latext" class="h-24">
+                        </span>
+                        <p class="text-center text-xl mt-2">Latex</p>
+                      </div>
+          </div>
+        </div>
+      </div
+
+    <!--start of the project section-->
+    <section id="Projects">
+    <div style="font-family: 'Unbounded', cursive;" class="flex justify-center">
+          <h1 class="text-3xl lg:text-4xl font-semibold max-lg:mt-10 mt-24 dark:text-white">
+            <u>Projects</u></h1>
+        </div>
+        <div class="flex items-center justify-center min-h-screen container mx-auto p-5">
+        <!--GRIDS-->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+            <!--CARDS-->
+            <div class="rounded-xl shadow-md hover:shadow-2xl bg-slate-300 mb-5 dark:bg-beige-2">
+                <div class="p-5 flex flex-col items-center">
+                    <div class="rounded-xl overflow-hidden">
+                        <img src="assets/project_images/Macbook-Air-127.0.0.1 (2).png" alt="pro">
+                    </div>
+                    <h5 class="text-2xl md:text-3xl font-medium mt-3 dark:text-slate-400">Portifolio</h5>
+                    <p class="text-slate-500 text-lg mt-3">
+                        it is made using html tailwindcss javascript 
+                        it shows my ability to create user friendly web applications
+                        </p>
+                    <a href="views/view2.html" class="btn text-center dark:text-white">Read More</a>
+                </div>
+            </div>
+            <div class="rounded-xl shadow-md hover:shadow-2xl bg-slate-300 dark:bg-beige-2 mb-5 md:ml-5">
+                <div class="p-5 flex flex-col items-center">
+                    <div class="rounded-xl overflow-hidden">
+                        <img src="assets/project_images/Macbook-Air-127.0.0.1 (3).png" alt="pro">
+                    </div>
+                    <h5 class="text-2xl md:text-3xl font-medium mt-3 dark:text-slate-400">Login system</h5>
+                    <p class="text-slate-500 text-lg mt-3">
+                    it is the web app made using html5 css and node js for
+                    interacting front-end and back-end
+                        </p>
+                    <a href="views/view1.html" class="btn text-center dark:text-white">Read More</a>
+                </div>
+            </div>
+            <div class="rounded-xl shadow-md hover:shadow-2xl bg-slate-300 dark:bg-beige-2 lg:ml-5 md:mr-3">
+                <div class="p-5 flex flex-col items-center">
+                    <div class="rounded-xl overflow-hidden">
+                        <img src="assets/project_images/food.png" alt="pro">
+                    </div>
+                    <h5 class="text-2xl md:text-3xl font-medium mt-3 dark:text-slate-400">Food Template</h5>
+                    <p class="text-slate-500 text-lg mt-3">
+                        Here created a functioning food template in order to 
+                        uprade my tailwind css skills</p>
+                    <a href="views/view.html" class="btn text-center dark:text-white">Read More</a>
+                </div>
+            </div>
+            <!--ended cards-->
+        </div>
+    </div>
+    <!--ENDED GRIDS-->
+    </section>
+    <!-- ended the project section-->
+
+    <section id="education">
+        <div class="min-h-screen bg-slate-100 dark:bg-beige pb-10" id = "Section-Education">
+        <div style="font-family: 'Unbounded', cursive;" class="flex justify-center">
+          <h1 class="wow animate__animated animate__fadeInDown text-3xl lg:text-4xl font-semibold max-lg:mt-10 mt-24 dark:text-white">Education</h1>
+        </div>
+        <div class="wow animate__animated animate__fadeInUp mx-auto w-2/3 bg-white dark:bg-beige-2 rounded-xl shadow-md overflow-hidden mt-12 hover:shadow-lg transition duration-200">
+          <div class="md:flex">
+            <div class="md:shrink-0">
+              <img class="h-48 w-full object-cover md:h-44 md:w-48 xl:w-72" src="Assets/School_image/lycee.jpg" alt="Lycee">
+            </div>
+            <div class="p-8">
+              <div class="uppercase tracking-wide text-md sm:text-xl text-indigo-500 dark:text-blue-text font-semibold">Lycee De Nyanza</div>
+              <p class="mt-2 text-sm sm:text-lg text-slate-500 dark:text-beige-text-1">Software Development</p>
+              <p class="mt-2 text-sm sm:text-lg text-slate-500 dark:text-beige-text-1">2020 - 2025</p>
+            </div>
+          </div>
+        </div>
+        <div class="wow animate__animated animate__fadeInUp animate__delay-1s mx-auto w-2/3 bg-white dark:bg-beige-2 rounded-xl shadow-md overflow-hidden mt-5 hover:shadow-lg transition duration-200">
+          <div class="md:flex">
+            <div class="md:shrink-0">
+              <img class="h-48 w-full object-cover md:h-44 md:w-48 xl:w-72" src="assets/School_image/gsob.jfif" alt="GSOB">
+            </div>
+            <div class="p-8">
+              <div class="uppercase tracking-wide text-md sm:text-xl text-indigo-500 dark:text-blue-text font-semibold">Groupe Scolaire Officiel de Butare</div>
+              <p class="mt-2 text-sm sm:text-lg text-slate-500 dark:text-beige-text-1">O level</p>
+              <p class="mt-2 text-sm sm:text-lg text-slate-500 dark:text-beige-text-1">2019 - 2020</p>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <!-- stated the contact section -->
+    <section id="contact" class="md:h-[100vh] pb-96 md:pb-0">
+      <div style="font-family: 'Unbounded', cursive;" class="flex justify-center">
+      <h1 class="text-3xl lg:text-4xl font-semibold max-lg:mt-10 mt-24 dark:text-white"><u>Contact Me</u></h1>
+    </div>
+      <div class="flex w-full min-h-screen justify-center items-center p-10">
+        <div class="flex flex-col md:flex-row md:space-x-6 md:space-y-0 space-y-6 bg-white dark:bg-[#1a202c] w-full max-w-5xl p-8 rounded-xl shadow-xl pr-5">
+            <div class="content">
+                <div class="flex flex-col space-y-8 justify-between mr-10 left-side">
+                <div class="flex flex-col space-y-4 items-center">
+                    <div class="flex flex-col space-x-2 items-center">
+                        <i class="fa-solid fa-phone text-[#3e2093] text-2xl"></i>
+                        <h1 class="text-xl text-black font-bold dark:text-gray-100">Phone</h1>
+                        <span class="text-black dark:text-gray-300">+250 798 342 542</span>
+                    </div>
+                    <div class="flex flex-col space-x-2 items-center">
+                        <i class="fa-solid fa-envelope text-[#3e2093] text-2xl"></i>
+                        <h1 class="text-xl text-black dark:text-gray-100 font-bold">Email</h1>
+                        <span class="text-black dark:text-gray-300">waveb6133@gmail.com</span>
+                    </div>
+                    <div class="flex flex-col space-x-2 items-center">
+                        <i class="fa-solid fa-location-dot text-[#3e2093] text-2xl"></i>
+                        <h1 class="text-xl text-black font-bold dark:text-gray-100">Address</h1>
+                        <span class="text-black dark:text-gray-300">Nyanza Rwanda</span>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="rounded-xl text-black right-side">
+                <form action="" class="flex flex-col space-x-4">
+                    <h1 class="text-2xl text-[#3e2093] text-center" style="font-family: 'Unbounded', cursive;">Send Message</h1>
+                    <div>
+                        <input type="text" placeholder="enter the name" class="ring-0 
+                        bg-slate-200 dark:bg-gray-800 dark:text-gray-200 w-full rounded-md outline-none px-4 py-3 mt-2 shadow-lg">
+                        <input type="email" placeholder="enter the email" class="ring-0 dark:text-gray-200 bg-slate-200 dark:bg-gray-800 w-full rounded-md outline-none px-4 py-3 mt-2 shadow-lg">
+                        <textarea placeholder="Message" rows="4" class="ring-0 w-full dark:text-gray-200 rounded-md outline-none px-4 py-2 bg-slate-200 dark:bg-gray-800 mt-3 shadow-lg"></textarea>
+                    </div>
+                    <button class="inline-block self-end bg-[#3e2093] shadow-md text-white uppercase
+                    text-sm font-bold rounded-lg px-6 py-2 mt-3" type="submit">send Message</button>
+                </form>
+            </div> 
+        </div>
+    </div>
+    </section>
+    <!--Ended the contact section-->
+
+    <!--start of the footer-->
+    <footer class="bg-gray-800 dark:bg-royal-blue md:mt-0 mt-64">
+        <div class="container mx-auto px-6 py-4">
+          <div class="flex flex-col lg:flex-row lg:justify-between lg:items-center">
+            <div class="mt-2 lg:mt-0 lg:order-1">
+              <p style="font-family: 'Unbounded', cursive;" class="text-xl lg:text-2xl font-semibold text-center lg:text-left text-gray-400 dark:text-tan max-lg:mb-7">Socials</p>
+            </div>
+            <div class="flex justify-center lg:order-2">
+                <a href="https://github.com/bigwave819" class="mx-4"><img src="./Assets/social_images/github.svg" alt="Github" class="h-12 hover:origin-center hover:-rotate-12 hover:scale-110 transition duration-200" id = "gitsocial"></a>
+                <a href="www.linkedin.com/in/hirwa-tresor-4091922b6" class="mx-4"><img src="./Assets/social_images/linkedin.svg" alt="Linkedin" class="h-11 hover:origin-center hover:rotate-12 hover:scale-110 transition duration-200" id = "in"></a>
+                <a href="mailto:waveb6133@gmail.com" class="mx-4"><img src="./Assets/social_images/mail.svg" alt="Mail" class="h-11 hover:origin-center hover:-rotate-12 hover:scale-110 transition duration-200" id = "mail"></a>
+                <a href="https://www.instagram.com/_big_wave._/" class="mx-4"><img src="./Assets/social_images/instagram.svg" alt="Instagram" class="h-11 hover:origin-center hover:rotate-12 hover:scale-110 transition duration-200" id = "ig"></a>
+                <a href="https://discord.com/users/769521843853066252" class="mx-4"><img src="./Assets/social_images/discord.svg" alt="Discord" class="h-11 hover:origin-center hover:-rotate-12 hover:scale-110 transition duration-200" id = "dc"></a>
+            </div>
+          </div>
+          <hr class="my-6 border-gray-700 dark:border-tan">
+          <p class="text-center text-gray-200 dark:text-tan-1">Designed & Created by Hirwa Tresor ©</p>
+        </div>
+      </footer>
+    <script src="assets/js/app.js"></script>
+</body>
+</html>

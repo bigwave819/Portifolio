@@ -44,3 +44,14 @@ hamburger.addEventListener('click', function() {
     line2.classList.add('mt-2');
   }
 });
+
+function sendMail() {
+  var params ={
+    from_name: document.getElementById('fullname').value,
+    email : document.getElementById('fullname').value,
+    message: document.getElementById('message').value,
+  }
+  emailjs.send('service_soaf1y2', 'template_xyps4ee', params).then(function (res){
+    alert('success!' + res.status);
+  });
+}

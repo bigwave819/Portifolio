@@ -8,6 +8,16 @@
     <link rel="stylesheet" href="output.css">
     <link rel="icon" type="image/x-icon" href="assets/images/logo.jpg" class="rounded">
     <title>Hirwa Tresor</title>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "UttnbXkySbM3nczsA",
+      });
+   })();
+</script>
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
       *{
@@ -51,7 +61,7 @@
             <div class="relative z-10 w-full flex items-center justify-between px-6 lg:w-auto">
                 <a href="#" class="inline-flex">
                     <img src="assets/images/logo.jpg" alt="logo" class="w-9 h-9 mr-5">
-                    <h1 class="text-2xl">Hirwa Tresor</h1>
+                    <h1 class="text-2xl font-bold">Hirwa Tresor</h1>
                 </a>
                 <button id="hamburger" class="relative w-10 h-10 lg:hidden">
                     <div role="hidden" id="line" class="inset-0 w-6 h-0.5 m-auto rounded bg-gray-500 transition duration-500"></div>
@@ -117,7 +127,7 @@
                work effectively in diverse development settings.</p>
               </div>
               <div class="lg:w-1/2 lg:mt-70 md:mt-56 lg:mt-0">
-              <img src="assets/images/logo.jpg" class="lg:mt-20 shadow-2xl mt-5 md:ml-7">
+              <img src="assets/profile/hirwa.jpeg" class="lg:mt-20 shadow-2xl mt-5 md:ml-7">
             </div>
             </div>
     </section>
@@ -313,7 +323,7 @@
     </section>
 
     <!-- stated the contact section -->
-    <section id="contact" class="md:h-[100vh] pb-96 md:pb-0">
+    <section id="contact" class="md:h-[100vh] md:pb-0">
       <div style="font-family: 'Unbounded', cursive;" class="flex justify-center">
       <h1 class="text-3xl lg:text-4xl font-semibold max-lg:mt-10 mt-24 dark:text-white"><u>Contact Me</u></h1>
     </div>
@@ -344,13 +354,13 @@
                 <form action="" class="flex flex-col space-x-4">
                     <h1 class="text-2xl text-[#3e2093] text-center" style="font-family: 'Unbounded', cursive;">Send Message</h1>
                     <div>
-                        <input type="text" placeholder="enter the name" class="ring-0 
+                        <input type="text" id="fullname" placeholder="enter the name" class="ring-0 
                         bg-slate-200 dark:bg-gray-800 dark:text-gray-200 w-full rounded-md outline-none px-4 py-3 mt-2 shadow-lg">
-                        <input type="email" placeholder="enter the email" class="ring-0 dark:text-gray-200 bg-slate-200 dark:bg-gray-800 w-full rounded-md outline-none px-4 py-3 mt-2 shadow-lg">
-                        <textarea placeholder="Message" rows="4" class="ring-0 w-full dark:text-gray-200 rounded-md outline-none px-4 py-2 bg-slate-200 dark:bg-gray-800 mt-3 shadow-lg"></textarea>
+                        <input type="email" id="email" placeholder="enter the email" class="ring-0 dark:text-gray-200 bg-slate-200 dark:bg-gray-800 w-full rounded-md outline-none px-4 py-3 mt-2 shadow-lg">
+                        <textarea id="message" placeholder="Message" rows="4" class="ring-0 w-full dark:text-gray-200 rounded-md outline-none px-4 py-2 bg-slate-200 dark:bg-gray-800 mt-3 shadow-lg"></textarea>
                     </div>
                     <button class="inline-block self-end bg-[#3e2093] shadow-md text-white uppercase
-                    text-sm font-bold rounded-lg px-6 py-2 mt-3" type="submit">send Message</button>
+                    text-sm font-bold rounded-lg px-6 py-2 mt-3" onclick="sendMail()">send Message</button>
                 </form>
             </div> 
         </div>
@@ -359,7 +369,7 @@
     <!--Ended the contact section-->
 
     <!--start of the footer-->
-    <footer class="bg-gray-800 dark:bg-royal-blue md:mt-0 mt-64">
+    <footer class="bg-gray-800 dark:bg-royal-blue md:mt-0 ">
         <div class="container mx-auto px-6 py-4">
           <div class="flex flex-col lg:flex-row lg:justify-between lg:items-center">
             <div class="mt-2 lg:mt-0 lg:order-1">

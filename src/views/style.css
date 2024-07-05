@@ -34,6 +34,14 @@
         margin-left: 25%;
         transition: all ease-in-out 0.5s;
     }
+    .modal a{
+        text-decoration: none;
+        color: black;
+        margin-top: 10px;
+    }
+    .modal a:hover{
+        color: white;
+    }
     .modal p{
         font-size: 18px;
     }
